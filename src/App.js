@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import BookSeries from './components/BookSeries';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import books from './assets/books.json';
+import './scss/app.scss';
+import BookBlock from './components/BookBlock';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <Header />
+      <div className="content">
+        <div className="container">
+          <BookSeries />
+
+          <h2 className="content__title">Все книги</h2>
+          <div className="content__items">
+            {books.map((obj) => (
+              <BookBlock {...obj} />
+            ))}
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,80 @@
+[
+  {
+    "id": 0,
+    "imgUrl": "https://cdn.ast.ru/v2/ASE000000000838831/COVER/cover1__w600.jpg",
+    "type": [0, 1],
+    "author": "Хейли Артур",
+    "title": "Отель",
+    "pages": 608,
+    "ageRating": "16+",
+    "language": ["Ru", "Eng", "Esp"],
+    "price": 7,
+    "category": 1,
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "imgUrl": "https://cdn.ast.ru/v2/AST000000000168248/COVER/cover1__w600.jpg",
+    "type": [0, 1],
+    "author": "Сорокин Владимир Георгиевич",
+    "title": "День опричника",
+    "pages": 224,
+    "ageRating": "18+",
+    "language": ["Ru", "Eng", "Esp"],
+    "price": 10,
+    "category": 2,
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "imgUrl": "https://cdn.ast.ru/v2/ASE000000000833833/COVER/cover1__w600.jpg",
+    "type": [0, 1],
+    "author": "Гжендович Ярослав",
+    "title": "Владыка ледяного сада: В сердце тьмы",
+    "pages": 576,
+    "ageRating": "16+",
+    "language": ["Ru", "Eng", "Esp"],
+    "price": 10,
+    "category": 3,
+    "rating": 4
+  },
+  {
+    "id": 4,
+    "imgUrl": "https://cdn.ast.ru/v2/ASE000000000844595/COVER/cover1__w600.jpg",
+    "type": [0, 1],
+    "author": "Шемилт Джейн",
+    "title": "Дочь",
+    "pages": 352,
+    "ageRating": "16+",
+    "language": ["Ru", "Eng", "Esp"],
+    "price": 15,
+    "category": 4,
+    "rating": 4
+  },
+  {
+    "id": 5,
+    "imgUrl": "https://cdn.ast.ru/v2/ASE000000000835470/COVER/cover1__w600.jpg",
+    "type": [0, 1],
+    "author": "Паланик Чак",
+    "title": "Бойцовский клуб",
+    "pages": 256,
+    "ageRating": "18+",
+    "language": ["Ru", "Eng", "Esp"],
+    "price": 19,
+    "category": 5,
+    "rating": 4
+  },
+  {
+    "id": 6,
+    "imgUrl": "https://cdn.ast.ru/v2/ASE000000000831552/COVER/cover1__w600.jpg",
+    "type": [0, 1],
+    "author": "Говард Джонатан",
+    "title": "Иоганн Кабал, некромант",
+    "pages": 480,
+    "ageRating": "16+",
+    "language": ["Ru", "Eng", "Esp"],
+    "price": 11,
+    "category": 6,
+    "rating": 4
+  }
+]
