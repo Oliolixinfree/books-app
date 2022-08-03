@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const BookBlock = ({ id, title, price, imgUrl, author }) => {
+const BookBlock = ({ id, title, price, imgUrl, author, coverType, language }) => {
+  const [activeCover, setActiveCover] = useState(0);
+  const [activeLanguage, setActiveLanguage] = useState(0);
+
+  const coverTypes = ['мягкая', 'твердая'];
+
   return (
     <div className="book-block">
       <img className="book-block__image" src={imgUrl} alt="Book" />
@@ -8,10 +13,22 @@ const BookBlock = ({ id, title, price, imgUrl, author }) => {
       <span>{author}</span>
       <div className="book-block__selector">
         <ul>
-          <li></li>
+          {coverType.map((type) => (
+            <li
+              onClick={() => setActiveCover(type)}
+              className={activeCover === type ? 'active' : ''}>
+              {coverTypes[type]}
+            </li>
+          ))}
         </ul>
         <ul>
-          <li></li>
+          {language.map((lang, i) => (
+            <li
+              onClick={() => setActiveLanguage(i)}
+              className={activeLanguage === i ? 'active' : ''}>
+              {lang}
+            </li>
+          ))}
         </ul>
       </div>
       <div className="pizza-block__bottom">
