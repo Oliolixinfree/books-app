@@ -1,9 +1,12 @@
 @import '../variables';
 .book-block {
   width: 300px;
+  display: grid;
+  margin-bottom: 30px;
 
   &__image {
     width: 300px;
+    height: 460px;
   }
 
   &__title {
