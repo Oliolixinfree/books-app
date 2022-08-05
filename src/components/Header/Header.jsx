@@ -1,17 +1,22 @@
 import React from 'react';
 import { GiBlackBook, GiShoppingCart } from 'react-icons/gi';
 import styles from '../Header/Header.module.scss';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <div className="header">
       <div className="container">
-        <div className={styles.logoItems}>
-          <GiBlackBook style={{ width: '50px', height: '50px' }} />
-          <span>book world</span>
-        </div>
+        <Link to="/">
+          <div className={styles.logoItems}>
+            <GiBlackBook style={{ width: '50px', height: '50px' }} />
+            <span>book world</span>
+          </div>
+        </Link>
         <div>
-          <GiShoppingCart style={{ width: '50px', height: '50px', cursor: 'pointer' }} />
+          <Link to="/cart">
+            <GiShoppingCart style={{ width: '50px', height: '50px', cursor: 'pointer' }} />
+          </Link>
         </div>
       </div>
     </div>
