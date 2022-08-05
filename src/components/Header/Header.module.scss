@@ -1,0 +1,10 @@
+.logoItems {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  span {
+    font-size: 26px;
+    text-transform: uppercase;
+  }
+}

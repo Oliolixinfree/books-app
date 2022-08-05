@@ -13,7 +13,7 @@ const BookSeries = () => {
   ];
 
   return (
-    <div>
+    <div className="book__series">
       <ul>
         {series.map((value, i) => (
           <li onClick={() => setActiveIndex(i)} className={activeIndex === i ? 'active' : ''}>
